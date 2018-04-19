@@ -43,12 +43,13 @@ namespace Sitecore.Support.Framework.Publishing.ManifestCalculation
       // Processing on the stream can only continue if the candidate has a valid parent on the target.
       var startItemValidated = false;
       var startItemIsValid = false;
+      var isRelated = _publishStream == null ? false : _publishStream.GetType().Name.Contains("RelatedNodes");
 
       _publishStream.Subscribe(ctx =>
       {
         try
         {
-          if (!startItemValidated)
+          if (!startItemValidated || isRelated)
           {
             if (!ctx.IsValid)
             {

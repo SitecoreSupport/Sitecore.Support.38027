@@ -182,7 +182,7 @@ namespace Sitecore.Support.Framework.Publishing.PublishJobQueue.Handlers
         parentValidator = new PublishTargetParentValidator(publishSourceRepository, targetIndex);
       }
 
-      publishStream = new Sitecore.Framework.Publishing.ManifestCalculation.CandidatesParentValidationTargetProducer(
+      publishStream = new Sitecore.Support.Framework.Publishing.ManifestCalculation.CandidatesParentValidationTargetProducer(
           publishStream,
           parentValidator,
           errorSource,

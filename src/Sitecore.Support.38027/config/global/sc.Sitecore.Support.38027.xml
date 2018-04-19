@@ -1,0 +1,12 @@
+﻿<Settings>
+  <Sitecore>
+    <Publishing>
+      <Services>
+        <TreePublishHandler>
+          <Type>Sitecore.Support.Framework.Publishing.PublishJobQueue.Handlers.TreePublishHandler, Sitecore.Support.38027</Type>
+          <As>Sitecore.Framework.Publishing.PublishJobQueue.IPublishJobHandler, Sitecore.Framework.Publishing.Abstractions</As>
+        </TreePublishHandler>
+      </Services>
+    </Publishing>
+  </Sitecore>
+</Settings>
